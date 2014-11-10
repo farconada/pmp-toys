@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Mapa de Procesos PMBOK5</h1>
+            <h2>Arrastra los procesos hasta su casilla correspondiente</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <ul id="procesos" class="list-group">
+                <li class="list-group-item draggable" data-solid="1x1">Desarrollar el acta de constitución del proyecto</li>
+                <li class="list-group-item draggable" data-solid="1x2">Desarrollar el plan para la dirección del proyecto</li>
+                <li class="list-group-item draggable" data-solid="1x3">Dirigir y gestionar el trabajo del proyecto</li>
+                <li class="list-group-item draggable" data-solid="1x4">Monitorear y controlar el trabajo del proyecto</li>
+                <li class="list-group-item draggable" data-solid="1x4">Realizar el control integrado de cambios</li>
+                <li class="list-group-item draggable" data-solid="1x5">Cerrar el proyecto o fase</li>
+                <li class="list-group-item draggable" data-solid="2x2">Planificar la gestión del alcance</li>
+                <li class="list-group-item draggable" data-solid="2x2">Recopilar requisitos</li>
+                <li class="list-group-item draggable" data-solid="2x2">Definir el alcance</li>
+                <li class="list-group-item draggable" data-solid="2x2">Crear la EDT</li>
+                <li class="list-group-item draggable" data-solid="2x3">Validar el alcance</li>
+                <li class="list-group-item draggable" data-solid="2x3">Controlar el alcance</li>
+                <li class="list-group-item draggable" data-solid="3x2">Planificar la gestión del cronograma</li>
+                <li class="list-group-item draggable" data-solid="3x2">Definir las actividades</li>
+                <li class="list-group-item draggable" data-solid="3x2">Secuenciar las actividades</li>
+                <li class="list-group-item draggable" data-solid="3x2">Estimar los recursos de las actividades</li>
+                <li class="list-group-item draggable" data-solid="3x2">Estimar la duraciones de las actividades</li>
+                <li class="list-group-item draggable" data-solid="3x2">Desarrollar el cronograma</li>
+                <li class="list-group-item draggable" data-solid="3x4">Controlar el cronograma</li>
+                <li class="list-group-item draggable" data-solid="4x2">Planificar la gestión de costos</li>
+                <li class="list-group-item draggable" data-solid="4x2">Estimar los costos</li>
+                <li class="list-group-item draggable" data-solid="4x2">Determinar el presupuesto</li>
+                <li class="list-group-item draggable" data-solid="4x4">Controlar los costos</li>
+                <li class="list-group-item draggable" data-solid="5x2">Planificar la gestión de la calidad</li>
+                <li class="list-group-item draggable" data-solid="5x3">Realizar el aseguramiento de calidad</li>
+                <li class="list-group-item draggable" data-solid="5x4">Controlar la calidad</li>
+                <li class="list-group-item draggable" data-solid="6x2">Planificar la gestión de RRHH</li>
+                <li class="list-group-item draggable" data-solid="6x3">Adquirir el equipo del proyecto</li>
+                <li class="list-group-item draggable" data-solid="6x3">Desarrollar el equipo del proyecto</li>
+                <li class="list-group-item draggable" data-solid="6x3">Dirigir el equipo del proyecto</li>
+                <li class="list-group-item draggable" data-solid="7x2">Planificar la gestión de las comunicaciones</li>
+                <li class="list-group-item draggable" data-solid="7x3">Gestionar las comunicaciones</li>
+                <li class="list-group-item draggable" data-solid="7x4">Controlar las comunicaciones</li>
+                <li class="list-group-item draggable" data-solid="8x2">Planificar la gestión de riesgos</li>
+                <li class="list-group-item draggable" data-solid="8x2">Identificar los riesgos</li>
+                <li class="list-group-item draggable" data-solid="8x2">Realizar el análisis cualitativo de riesgos</li>
+                <li class="list-group-item draggable" data-solid="8x2">Realizar el análisis cuantitativo de riesgos</li>
+                <li class="list-group-item draggable" data-solid="8x2">Planificar la respuesta a los riesgos</li>
+                <li class="list-group-item draggable" data-solid="8x4">Controlar los riesgos</li>
+                <li class="list-group-item draggable" data-solid="9x2">Planificar la gestión de adquisiciones del proyecto</li>
+                <li class="list-group-item draggable" data-solid="9x3">Efectuar las adquisiciones</li>
+                <li class="list-group-item draggable" data-solid="9x4">Controlar las adquisiciones</li>
+                <li class="list-group-item draggable" data-solid="9x5">Cerrar las adquisiciones</li>
+                <li class="list-group-item draggable" data-solid="10x1">Identificar a los interesados</li>
+                <li class="list-group-item draggable" data-solid="10x2">Planificar la gestión de los interesados</li>
+                <li class="list-group-item draggable" data-solid="10x3">Gestionar la participación de los interesados</li>
+                <li class="list-group-item draggable" data-solid="10x4">Controlar la participación de los interesados</li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <table class="table table-bordered">
+                <tr>
+                    <th>
+                        #
+                    </th>
+                    <th>Inicio</th>
+                    <th>Planificacion</th>
+                    <th>Ejecución</th>
+                    <th>Monitoreo y control</th>
+                    <th>Cierre</th>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">Integración</td>
+                    <td data-colid="1x1" class="droppable"></td>
+                    <td data-colid="1x2" class="droppable"></td>
+                    <td data-colid="1x3" class="droppable"></td>
+                    <td data-colid="1x4" class="droppable"></td>
+                    <td data-colid="1x5" class="droppable"></td>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">Alcance</td>
+                    <td data-colid="2x1" class="droppable"></td>
+                    <td data-colid="2x2" class="droppable"></td>
+                    <td data-colid="2x3" class="droppable"></td>
+                    <td data-colid="2x4" class="droppable"></td>
+                    <td data-colid="2x5" class="droppable"></td>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">Tiempo</td>
+                    <td data-colid="3x1" class="droppable"></td>
+                    <td data-colid="3x2" class="droppable"></td>
+                    <td data-colid="3x3" class="droppable"></td>
+                    <td data-colid="3x4" class="droppable"></td>
+                    <td data-colid="3x5" class="droppable"></td>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">Costos</td>
+                    <td data-colid="4x1" class="droppable"></td>
+                    <td data-colid="4x2" class="droppable"></td>
+                    <td data-colid="4x3" class="droppable"></td>
+                    <td data-colid="4x4" class="droppable"></td>
+                    <td data-colid="4x5" class="droppable"></td>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">Calidad</td>
+                    <td data-colid="5x1" class="droppable"></td>
+                    <td data-colid="5x2" class="droppable"></td>
+                    <td data-colid="5x3" class="droppable"></td>
+                    <td data-colid="5x4" class="droppable"></td>
+                    <td data-colid="5x5" class="droppable"></td>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">RRHH</td>
+                    <td data-colid="6x1" class="droppable"></td>
+                    <td data-colid="6x2" class="droppable"></td>
+                    <td data-colid="6x3" class="droppable"></td>
+                    <td data-colid="6x4" class="droppable"></td>
+                    <td data-colid="6x5" class="droppable"></td>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">Comunicaciones</td>
+                    <td data-colid="7x1" class="droppable"></td>
+                    <td data-colid="7x2" class="droppable"></td>
+                    <td data-colid="7x3" class="droppable"></td>
+                    <td data-colid="7x4" class="droppable"></td>
+                    <td data-colid="7x5" class="droppable"></td>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">Riesgos</td>
+                    <td data-colid="8x1" class="droppable"></td>
+                    <td data-colid="8x2" class="droppable"></td>
+                    <td data-colid="8x3" class="droppable"></td>
+                    <td data-colid="8x4" class="droppable"></td>
+                    <td data-colid="8x5" class="droppable"></td>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">Adquisiciones</td>
+                    <td data-colid="9x1" class="droppable"></td>
+                    <td data-colid="9x2" class="droppable"></td>
+                    <td data-colid="9x3" class="droppable"></td>
+                    <td data-colid="9x4" class="droppable"></td>
+                    <td data-colid="9x5" class="droppable"></td>
+                </tr>
+                <tr>
+                    <td class="grupo-proceso">Interesados</td>
+                    <td data-colid="10x1" class="droppable"></td>
+                    <td data-colid="10x2" class="droppable"></td>
+                    <td data-colid="10x3" class="droppable"></td>
+                    <td data-colid="10x4" class="droppable"></td>
+                    <td data-colid="10x5" class="droppable"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
